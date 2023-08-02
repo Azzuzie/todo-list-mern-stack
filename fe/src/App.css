@@ -1,0 +1,78 @@
+
+.box{
+  background-color: brown;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+h1{
+  font-size: 40px;
+  color: aqua;
+  text-decoration: underline;
+}
+
+/* add task button */
+.sub-btn{
+  background-color: blue;
+  margin-left:5px;
+  color: rgb(253, 253, 253);
+  height: 40px;
+  width: 100px;
+}
+
+/* input box */
+.ip{
+  height: 30px;
+  width: 40%;
+}
+
+ul{
+  /* background-color: aquamarine; */
+  margin: 20px 50px;
+  height: auto;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none
+}
+
+li{
+  /* background-color: rgb(43, 253, 2); */
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(5, 5, 5);
+  padding: 5px;
+  height: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+/* list and delete button container */
+.list-box{
+  margin: 20px;
+  height: auto;
+  width: 40%;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* delete button */
+.list-btn{
+  background-color: red;
+  color: azure;
+  position: relative;
+  right: 20%;
+  top: 25%;
+  height: 30px;
+}
+
+label{
+  font-size: 25px;
+  color: aquamarine;
+  margin-right: 10px;
+}
+button{
+  margin-right: 5px;
+}

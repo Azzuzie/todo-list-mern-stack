@@ -1,0 +1,17 @@
+Thought Note:
+
+--> The provided code represents a Todo List component in a React application. It allows users to add tasks, delete tasks, and displays the list of tasks dynamically. Here are the key points about the code:
+
+--> Component Structure: The code defines a functional component called Tasks that renders the Todo List UI.
+
+--> State Variables: The component uses the useState hook to manage state. The tasks state variable stores an array of tasks, the id state variable keeps track of the current task id, and the task state variable holds the value of the input field.
+
+--> Form Submission: The onSubmitForm function is triggered when the form is submitted. It prevents the default form submission, checks if the task is not empty, increments the id, creates a new task object with the id and task values, updates the tasks state by appending the new task, makes a POST request to the server to save the task, and clears the input box by setting task to an empty string.
+
+--> Task Deletion: The deleteTask function is called when the delete button for a specific task is clicked. It removes the task with the corresponding id from the tasks state by filtering the array and also delete the task from the database.
+
+--> Fetching Tasks: The fetchTasks function is called using the useEffect hook when the component mounts. It makes a GET request to the server to retrieve the tasks data, converts the response to a JavaScript object, updates the id state based on the length of the data array, and sets the tasks state with the retrieved data.
+
+--> Rendering Tasks: The component renders a list of tasks using the tasks.map method. Each task is displayed within a div container, with the task text rendered as a list item (<li>) and a delete button rendered next to it. Clicking the delete button triggers the deleteTask function to remove the corresponding task from the list.
+
+--> Overall, this code provides the functionality to add tasks, delete tasks, and display the task list dynamically. It interacts with a server API to store and retrieve tasks
